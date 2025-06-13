@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeInSlide 1s ease;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-card:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

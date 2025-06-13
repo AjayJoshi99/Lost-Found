@@ -1,0 +1,231 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1000;
+    }
+
+    .sidebar.collapsed {
+      transform: translateX(-100%);
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+    }
+
+    .sidebar nav a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 12px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .sidebar nav a:hover {
+      background-color: #34495e;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      padding: 30px;
+      flex: 1;
+      transition: margin-left 0.3s ease;
+    }
+
+    .main-content.full {
+      margin-left: 0;
+    }
+
+    .floating-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 28px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      z-index: 1100;
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-btn:hover {
+      background-color: #2ecc71;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        margin-left: 0;
+      }
+
+      .main-content.full {
+        margin-left: 0;
+      }
+    }
+
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.history-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.history-card img {
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+}
+
+.history-card .details {
+  padding: 15px;
+  flex: 1;
+}
+
+.history-card .details h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.history-card .details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.form-wrapper {
+  display: block !important;
+  width: 100%;
+}
+
+body {
+  background: #f4f7fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.filter-bar {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.filter-bar input[type="text"] {
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.filter-bar input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.filter-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-checkboxes label {
+  background-color: #e9ecef;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-checkboxes input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.filter-checkboxes label:hover {
+  background-color: #d6d8db;
+}
+
+.filter-bar button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.filter-bar button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.card-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.student-footer-bar {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+  transition: margin-left 0.3s ease;
+}
