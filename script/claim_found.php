@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION['email'])) {
     $_SESSION['msg'] = "You must be logged in to claim an item.";
-    header("Location: ../../login.php");
+    header("Location: ../../index.php");
     exit();
 }
 

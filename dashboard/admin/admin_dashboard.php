@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['email'])) {
+    header("Location: ../../index.php");
+    exit();
+}
 $search = $_GET['search'] ?? '';
 
 $conn = new mysqli("localhost", "root", "", "Lost_Found");

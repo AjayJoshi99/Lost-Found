@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['email'])) {
+    header("Location: ../../index.php");
+    exit();
+}
+
 $host = 'localhost';
 $user = 'root';
 $password = '';
@@ -140,7 +145,7 @@ $result = $stmt->get_result();
   }
 </script>
 
-<body>
+<body style = "align-items: center;">
   <div class="container">
     <aside class="sidebar" id="sidebar">
       <h2>Student Menu</h2>

@@ -98,13 +98,13 @@
     <form action="db_logic/process_login.php" method="POST">
       <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
-        <input type="email" name="email" class="form-control" required />
+        <input type="email" name="email" class="form-control" required autocomplete="off" />
       </div>
 
       <div class="mb-4">
         <label for="password" class="form-label">Password</label>
         <div class="input-group">
-          <input type="password" id="password" name="password" class="form-control" required />
+          <input type="password" id="password" name="password" class="form-control" required  autocomplete="off"/>
           <button type="button" class="input-group-text toggle-password">
             <i class="fa fa-eye" id="toggleIcon"></i>
           </button>

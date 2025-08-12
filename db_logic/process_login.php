@@ -19,6 +19,8 @@ if ($result->num_rows === 1) {
     $_SESSION['email'] = $user['email'];
     $_SESSION['Role'] = $user['Role'];
     echo $user['role'], $user['email'];
+    $email = '';
+    $password = '';
     if ($user['Role'] === 'Admin') {
         header("Location: ../dashboard/admin/admin_dashboard.php");
     } else {

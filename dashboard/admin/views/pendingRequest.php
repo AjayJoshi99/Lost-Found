@@ -43,12 +43,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['accept_id'])) {
                         $mail->isSMTP();
                         $mail->Host = 'smtp.gmail.com';
                         $mail->SMTPAuth = true;
-                        $mail->Username = 'ajayjoshi1908@gmail.com';
-                        $mail->Password = 'lbtqlgjzfusfsdcd'; 
+                        $mail->Username = 'a35183205@gmail.com'; //ajayjoshi1908@gmail.com
+                        $mail->Password = 'pvtwwwtdkcdjcrdi'; 
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                         $mail->Port = 587;
 
-                        $mail->setFrom('ajayjoshi1908@gmail.com', 'Lost & Found System');
+                        $mail->setFrom('lost.found.marwadiuniversity@gmail.com', 'Lost & Found System');
                         $mail->addAddress($lostUser['email'], 'User');
 
                         $mail->isHTML(true);
